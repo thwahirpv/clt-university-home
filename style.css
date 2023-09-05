@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+/* 09355a */
+
+.next-icon{
+    padding: 3px 3px;
+    background: rgba(183, 183, 183, 0.568);
+    border-radius: 50%;
+    margin-right: 1px;
+}
+
+.container {
+    width: 100%;
+    background: #fff;
+}
+
+/* Navigation bar start */
+.nav-bar {
+    width: 100%;
+    background: #0c426f;
+}
+
+/* logo and search start */
+.logo-and-search {
+    width: 100%;
+    height: 105px;
+    background: #0c426f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14%;
+}
+.logo {
+    background-image: url(Assets/images/logouc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 80px;
+}
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+.search-bar > p {
+    color: #9dbbd5;
+    font-size: 13px;
+}
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar > input {
+    padding: 6px 10px;
+    background: #154c7a;
+    color: #9dbbd5;
+    border: solid 1px #154c7a;
+    outline: none;
+}
+.bar > ion-icon {
+    color: #dce8f2;
+    padding: 6px 6px;
+    border: solid 1px #0a3559;
+    background: #0a3559;
+}
+/* logo and search end */
+
+/* Option-section start */
+.options-section {
+    width: 100%;
+    height: 45px;
+    background: #0c426f;
+    border-top: 1px solid #1f537e;
+    padding: 0 14%;
+}
+
+/* Option-section end */
+
+/* Options-ul start  */
+.options-ul {
+    display: flex;
+    height: 45px;
+} 
+.options-ul > li {
+    list-style: none;
+    border-left: solid 1px #1f537e;
+    border-right: solid 1px #1f537e;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 0 21px;
+    cursor: pointer;
+    position: relative;
+}
+.options-ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.options-ul > li > ion-icon {
+    font-size: 10px;
+    color: rgba(230, 230, 230, 0.815);
+}
+.active {
+    position: relative;
+    background: rgba(208, 208, 208, 0.125);
+}
+.options-ul > li:hover {
+   background: rgba(208, 208, 208, 0.125); 
+}
+.active::after {
+    content: '';
+    position: absolute;
+    background: rgb(210, 153, 7);
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 0;
+}
+/* Options-ul end  */
+
+/* inner navigation start */
+.inner-nav {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 12.5rem;
+    display: none;
+    transform: scale(0);
+}
+.inner-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    background: #2a6392;
+    border-radius: 2px;
+}
+.inner-ul > li {
+    list-style:  none;
+    border-bottom: solid 1px #1b5280;
+    padding: 10px 10px;
+    color: #a7c3db;
+    font-size: 12px;
+    position: relative;
+}
+.inner-ul > li:last-child {
+    border: none;
+}
+.options > ul > li:hover .inner-nav{
+    display: block;
+    transform: scale(1);
+}
+/* inner navigation end */
+
+/* Navigation bar end */
+
+/* body Start here */
+
+/* Home ing start */
+.home-img-section {
+    width: 100%;
+    height: 400px;
+}
+.home-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/images/banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.home-img > ion-icon {
+    z-index: 99;
+    background: rgba(174, 174, 174, 0.541);
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.home-img > ion-icon:hover {
+    background: rgba(208, 206, 206, 0.351);
+}
+/* Home ing end */
+
+/* Educational section start */
+.education {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem;
+    border-bottom: solid 1px #efece1;
+}
+.inner-education {
+    display: flex;
+    width: 70%;
+    gap: 3rem;
+}
+.inner-education > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inner-education > div > h4 {
+    color: #666;
+    font-size: 13px;
+}
+.inner-education > div > p {
+    color: #666;
+    font-size: 13px;
+}
+/* Educational section end */
+
+/* Heighlights section start */
+.highlights-section {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 8rem 0;
+    gap: 6rem;
+}
+
+
+.heighlight{
+    width: 73%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.heighlight-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.heighlight-img > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.heighlight-img > div > a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(59, 59, 226);
+    cursor: pointer;
+    text-decoration: none;
+}
+.heighlight-head > h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(21, 0, 0);
+}
+.heighlight-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.heighlight-img > div > img {
+    border: solid 2px gray;
+}
+.heighlight-img > div > img:hover {
+    border: solid 2px rgba(177, 175, 175, 0.685);
+}
+
+/* Heighlights section end */
+
+/* body End here */
+
+/* Footer start */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0a3966;
+}
+
+.spesifications { 
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8rem 0 3rem 0;
+    border-bottom: solid 1px #215281;
+}
+.footer-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 1.4rem 0 2rem 0;
+}
+.footer-ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.footer-ul > div > h1 {
+    color: #d9dee4;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer-ul > div > ul  {
+    margin-top: 20px;
+}
+.footer-ul > div > ul > li {
+    list-style: none;
+    margin-top: 7px;
+}
+.footer-ul > div > ul > li  > ion-icon {
+    color: #6991b7;
+    font-size: 11px;
+}
+.footer-ul > div > ul > li > a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #6991b7;
+}
+.connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.connect > h2 {
+    color: #d9dee4;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.connect > div { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.connect > div > img {
+    width: 30px;
+}
+
+.emty-line {
+    width: 100%;
+    background: 0a3966;
+    padding: 5px 0;
+    border-top: solid 1px #184978;
+    border-bottom: solid 1px #072848;
+}
+
+.final-footer {
+    background: #083158;
+    border-top: 1px solid #184978;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 0 2rem 0;
+}
+.final-footer > div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.final-footer > div > div {
+    width: 30%;
+}
+.final-footer > div > div > p {
+    color: #396893;
+    font-size: 12px;
+}
+
+
+/* Footer end */
